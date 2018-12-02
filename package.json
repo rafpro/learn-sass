@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass main.scss main.css",
-    "build:w": "node-sass -w main.scss main.css",
+    "build": "node-sass --output-style=expanded main.scss main.css",
+    "build:w": "node-sass -w --output-style=expanded main.scss main.css",
     "start": "npm run build:w"
   },
   "keywords": [

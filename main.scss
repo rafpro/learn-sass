@@ -30,6 +30,16 @@ body {
     flex-grow: 1;
   }
 
+  a {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+          color: $black;
+      }
+  }
+  
+
   .card__img--block {
     width: 100%;
     margin-bottom: 24px;
