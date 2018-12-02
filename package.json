@@ -1,0 +1,25 @@
+{
+  "name": "sass-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass main.scss main.css",
+    "build:w": "node-sass -w main.scss main.css",
+    "start": "npm run build:w"
+  },
+  "keywords": [
+    "sass",
+    "node-sass",
+    "custom-ui",
+    "bootstrap"
+  ],
+  "author": "Rafiqul Islam <rafique.ngn@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.1.3"
+  },
+  "devDependencies": {
+    "node-sass": "4.10.0"
+  }
+}

@@ -1,0 +1,47 @@
+//variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "global/varialbes";
+
+body {
+  font-family: sans-serif;
+  color: $body-color;
+  background-color: $body-bg;
+  font-size: $font-size-base;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-lg;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .card__img--block {
+    width: 100%;
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+%my-reusable-chunk {
+  font-size: $font-size-base * 2;
+  font-weight: bold;
+}
+
+.another-card {
+  @extend .card;
+  @extend %my-reusable-chunk;
+}

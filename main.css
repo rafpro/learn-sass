@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  color: #444;
+  background-color: #f3f3f7;
+  font-size: 16px; }
+  @media (min-width: 992px) {
+    body {
+      font-size: 20px; } }
+
+.card, .another-card {
+  display: flex;
+  flex-direction: column; }
+  .card > *, .another-card > * {
+    width: 100%;
+    flex-grow: 1; }
+  .card .card__img--block, .another-card .card__img--block {
+    width: 100%;
+    margin-bottom: 24px;
+    overflow: hidden; }
+    .card .card__img--block img, .another-card .card__img--block img {
+      max-width: 100%;
+      height: auto; }
+
+.another-card {
+  font-size: 32px;
+  font-weight: bold; }
