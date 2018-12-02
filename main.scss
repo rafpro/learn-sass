@@ -2,7 +2,13 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-@import "global/varialbes";
+@import "global/variables";
+
+$color-primary: #0512e7;
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
+$white-alpha: rgba($white, 0.2);
+
 
 body {
   font-family: sans-serif;
